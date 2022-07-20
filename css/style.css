@@ -343,8 +343,15 @@ footer a {
     }
 
     .tab-container {
+        width: 100%;
         display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: none;
+        padding: 0;
+    }
 
+    .tab-container .btn-white {
+        border: 1px solid var(--font-color);
     }
 
     .blog-container,
