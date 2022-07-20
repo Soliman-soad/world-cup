@@ -1,6 +1,11 @@
 /* google font  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(../font/Helvetica-Neue-Medium-Extended.ttf) format('truetype');
+}
+
 /* Common style */
 :root {
     --btn-color: #DD0000;
@@ -90,6 +95,7 @@ i {
 
 .header-text .btn {
     max-width: 200px;
+    font-family: 'HelveticaNeue';
 }
 
 .header-photo {
@@ -286,7 +292,6 @@ footer a {
     }
 
     .tab-container {
-        margin: 0%;
         background-color: #ffffff;
     }
 
@@ -338,8 +343,8 @@ footer a {
     }
 
     .tab-container {
-        margin: 0%;
-        background-color: #ffffff;
+        display: grid;
+
     }
 
     .blog-container,
@@ -361,6 +366,7 @@ footer a {
 
     .tab-btn {
         display: inline-block;
+        font-family: "HelveticaNeue";
     }
 
     .terms {
