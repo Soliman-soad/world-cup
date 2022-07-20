@@ -169,9 +169,8 @@ i {
 }
 
 .match {
-
     width: 250px;
-    height: 150px;
+    height: 200px;
     border: 1px solid rgba(0, 0, 0, 0.09);
     border-radius: 10px;
     cursor: pointer;
@@ -232,4 +231,63 @@ footer a {
 
 .social-media i {
     font-size: 2rem;
+}
+
+/* responsive style */
+@media screen and (max-width:767px) {
+
+    /* header section */
+    .header-container {
+        height: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-container>div {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .header-text {
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .header-photo img {
+        width: 90%;
+    }
+
+    /* main- section */
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-container {
+        margin: 0%;
+        background-color: #ffffff;
+    }
+
+    .blog-container,
+    .matches {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 25px;
+    }
+
+    .match,
+    .blog {
+        width: 100%;
+        height: 100%;
+    }
+
+    .terms {
+        flex-direction: column;
+        align-items: center;
+    }
 }
